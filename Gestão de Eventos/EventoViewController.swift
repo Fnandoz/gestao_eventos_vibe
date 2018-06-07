@@ -25,8 +25,8 @@ class EventoViewController: UIViewController {
         let imgCliente = NSData(base64Encoded: replace(img: (self.evento?.clienteImagem)!), options: [])
         
         nomeLabel.text = self.evento?.nome
-        inicioLabel.text = self.evento?.inicio
-        localLabel.text = self.evento?.local
+        inicioLabel.text = "Início \(self.evento?.inicio ?? "")"
+        localLabel.text = "Local: \(self.evento?.local ?? "")"
         
         imgEventoView.image = UIImage(data: imgEvento! as Data)
         clienteImgView.image = UIImage(data: imgCliente! as Data)
