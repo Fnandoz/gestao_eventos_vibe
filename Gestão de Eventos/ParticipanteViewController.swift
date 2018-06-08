@@ -56,6 +56,7 @@ class ParticipanteViewController: UIViewController {
                 self.assinaturaView.image = UIImage(data: img as! Data)
                 
                 self.emailLabel.text = self.participante?.email
+                
                 self.dataCadastroLabel.text = self.participante?.DataCadastro
                 
                 if(self.participante?.status)!{
@@ -67,7 +68,12 @@ class ParticipanteViewController: UIViewController {
                 }
                 
                 if(self.participante?.checkIn != "null"){
-                    self.checkInLabel.text = self.participante?.checkIn
+                    let dateFormat = DateFormatter()
+                    dateFormat.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SS"
+                    let date = dateFormat.date(from: self.participante?.checkIn ?? "")
+                    dateFormat.dateFormat =  "dd/MM/yyyy HH:mm"
+                    let newDate = dateFormat.string(from: date as! Date)
+                    self.checkInLabel.text = "Check in: \(newDate)"
                 }
                 
                 if(self.participante?.email == "null"){
