@@ -17,6 +17,7 @@ class EventoViewController: UIViewController {
     @IBOutlet weak var inicioLabel: UILabel!
     @IBOutlet weak var localLabel: UILabel!
     @IBOutlet weak var clienteImgView: UIImageView!
+    @IBOutlet weak var quandoLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +27,7 @@ class EventoViewController: UIViewController {
         
         nomeLabel.text = self.evento?.nome
         inicioLabel.text = "Início \(self.evento?.inicio ?? "")"
+        quandoLabel.text = self.evento?.quando
         localLabel.text = "Local: \(self.evento?.local ?? "")"
         
         imgEventoView.image = UIImage(data: imgEvento! as Data)

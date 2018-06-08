@@ -14,14 +14,16 @@ class Evento {
     var imagem: String
     var clienteImagem: String
     var inicio: String
+    var quando: String
     var local: String
     
-    init(id: Int, nome: String, imagem: String, clienteImagem: String, inicio: String, local: String) {
+    init(id: Int, nome: String, imagem: String, clienteImagem: String, inicio: String, quando: String, local: String) {
         self.id = id
         self.nome = nome
         self.imagem = imagem
         self.clienteImagem = clienteImagem
         self.inicio = inicio
+        self.quando = quando
         self.local = local
     }
 }

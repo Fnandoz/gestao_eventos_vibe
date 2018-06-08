@@ -25,6 +25,7 @@ class EventosViewController: UITableViewController {
                     id: i["Id"].int!, nome: i["Nome"].string!,
                     imagem: i["Imagem"].string!, clienteImagem: i["ClienteImagem"].string!,
                     inicio: i["Inicio"].string!,
+                    quando: i["Quando"].string!,
                     local: i["Local"].string!)
                 self.eventos.append(evento)
                 DispatchQueue.main.async{
