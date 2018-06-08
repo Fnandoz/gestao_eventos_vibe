@@ -133,7 +133,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dSe-z3-Yu4">
-                                <rect key="frame" x="140" y="362" width="95" height="76"/>
+                                <rect key="frame" x="140" y="362" width="95" height="76.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="dSe-z3-Yu4" secondAttribute="height" multiplier="101:81" id="OLF-0U-cmh"/>
                                 </constraints>
